@@ -1,6 +1,6 @@
 ﻿from math import sqrt
 
-options = ["square", "hollowsquare", "triangle", "circle"];
+options = ["square", "hollowsquare", "triangle", "circle", "isosceles"];
 option = "";
 size = 0;
 
@@ -8,7 +8,7 @@ while True:
     if option in options:
         break
     else:
-        option = raw_input("Shape (square, hollowsquare, triangle, circle) :")
+        option = raw_input("Shape (square, hollowsquare, triangle, circle, isosceles) :")
 
 while True:
     if size:
@@ -57,4 +57,13 @@ elif option == "circle":
             else:
                 render += ' '
         render += '\r\n'
+elif option == "isosceles":
+    for y in range(1, int(size) / 2):
+        for x in range(1, int(size)):
+            if x > int(size) / 2 - y and x < int(size) / 2 + y:
+                render += '*'
+            else:
+                render += ' '
+        render += '\r\n'
+
 print(render)
