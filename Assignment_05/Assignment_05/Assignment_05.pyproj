@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4c665629-ba76-4bd2-9280-369077a6d67b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>cryptography.py</StartupFile>
+    <StartupFile>reverse_string.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
